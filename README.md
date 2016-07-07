@@ -1,6 +1,6 @@
 ## Web Components
 
-## [Component 01: Signup Form](moderndeveloper-web-components/01-Signup-Form)
+## [Component 01: Signup Form](01-Signup-Form)
 ## [Component 02: Search Form](moderndeveloper-web-components/02-Search-Form)
 ## [Component 03: Questionaire Form](moderndeveloper-web-components/03-Questionaire-Form)
 ## [Component 04: Login Form](moderndeveloper-web-components/04-Login-Form)
