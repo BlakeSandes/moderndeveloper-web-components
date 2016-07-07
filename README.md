@@ -1,5 +1,7 @@
 ## Web Components
 
+All web components I make for the Modern Developer program will find their place in this repository.
+
 ## [Component 01: Signup Form](01-Signup-Form)
 ## [Component 02: Search Form](02-Search-Form)
 ## [Component 03: Questionaire Form](03-Questionaire-Form)
