@@ -1,3 +1,26 @@
+
 @import url("../styles/normalize.css");
 @import url("../styles/default.css");
 
+.button {
+  /*Clear defaults*/
+  display: inline-block;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  /*New Styles*/
+  margin: 0 8px;
+  border-radius: 2px;
+  background-image: linear-gradient(to top, rgb(50,199,195), rgb(40,238,164), rgb(50,199,195)),
+  linear-gradient(to right, rgb(50,199,195), rgb(40,238,164), rgb(50,199,195));
+  padding: 2px 8px;
+  border: 1px solid rgba(238,40,129,.5);
+  box-shadow: 0 0 0 1px rgba(30,176,201,1),
+  inset 0 0 0 1px rgba(0,255,255,1),
+  inset 0 0 0 3px rgb(50,199,195);
+
+  color: rgba(0,117,153,1);
+  text-shadow: 0 0 1px white;
+}
