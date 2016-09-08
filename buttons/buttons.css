@@ -1,7 +1,19 @@
 
 
+
+
 @import url("../styles/normalize.css");
 @import url("../styles/default.css");
+
+.buttons {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttons h3 {
+  color: rgb(106,74,135);
+  text-shadow: 0 0 1px white;
+}
 
 .button {
   /*Clear defaults*/
@@ -14,7 +26,7 @@
   box-shadow: none;
   /*New Styles*/
   height: 32px;
-  margin: 8px 8px 8px 0;
+  margin: 0 8px 8px 0;
   border-radius: 6px;
   background-image: linear-gradient(to top,rgb(51,248,255) 10%,
     rgb(20,193,199), rgb(51,248,255) 90%);
@@ -43,7 +55,8 @@
   box-shadow:  0 0 0 1px rgba(0,255,255,1),
   inset 0 0 0 1px rgba(255,205,94,1),
   inset 0 0 0 2px rgba(220,138,250,1),
-  1px 1px 0 1px rgb(50,199,195);
+  1px 1px 0 1px rgb(50,199,195),
+  0 0 1px rgb(57,46,84);
   color: rgb(16,131,161);
   font-size: 1.135em;
 }

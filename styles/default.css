@@ -1,4 +1,4 @@
-/***********FOUNDATION STYLES FOR ALL PAGES**************/
+  /***********FOUNDATION STYLES FOR ALL PAGES**************/
 
 * {
   box-sizing: border-box;
@@ -6,12 +6,13 @@
 html {
   height: 100%;
 }
+
 body {
   font-family: 'Slabo 27px', serif;
   margin: 10px;
   height: 100%;
   min-height: 100%;
-  background-image: url(../images/sunset-greyed.jpg);
+  background: url("../images/sunset-greyed.jpg");
 }
 
 .container {
@@ -20,6 +21,9 @@ body {
   min-height: 100%;
   margin: 0 auto;
   padding-bottom: 84px;
+
+  content: " ";
+  clear: both;
 }
 
 header {
@@ -46,14 +50,6 @@ nav {
   border-right: 1px solid rgba(4,102,108,.3);
   border-left: 1px solid rgba(4,102,108,.3);
 }
-.home:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-right: 1px solid rgba(39,172,173,1);
-}
 .home:before {
   content: "";
   position: absolute;
@@ -61,6 +57,14 @@ nav {
   left:0;
   bottom: 0;
   border-left: 1px solid rgba(39,172,173,1);
+}
+.home:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid rgba(39,172,173,1);
 }
 
 .home a {
@@ -133,6 +137,7 @@ nav ul li a {
 }
 
 a {
+  outline: none;
   text-decoration: none;
   color: rgba(2,48,64,.8);
   text-shadow: 0 0 1px white;
@@ -146,14 +151,94 @@ a {
 a:hover {
   background: rgba(68,219,199,.7);
 }
-
-.content h1:first-child {
-  margin: 36px 0;
+.content > h1:first-child {
+  margin-top: 20px;
   text-align: center;
 }
-
 h1, h2 {
   color: rgba(2,48,64,.8);
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  clear: both;
+  background: linear-gradient(to right, rgba(0,193,199,.5) 25%, rgba(0,247,242,.3) 50%, rgba(0,193,199,.5));
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 0 2px rgba(105,62,57,.8);
+  text-align: center;
+  line-height: 64px;
+}
+
+footer span {
+  position: relative;
+  font-size: 1.145em;
+  text-shadow: 0 0 1px white;
+}
+footer span:before {
+  content: '©';
+  margin-right: 4px;
+  color: orange;
+}
+footer span:after {
+  content: 'Blake Wilson';
+  color: rgb(110,112,171);
+}
+/********Clear Moz defaults psuedo element styling********/
+*:focus, *:visited, *:active, *:hover  { outline:0 !important;}
+*::-moz-focus-inner {border:0;}
+
+/*******Clear Moz deafult select element styling********/
+@-moz-document url-prefix() {
+  select, select:-moz-focusring, select::-moz-focus-inner {
+    color: transparent;
+    text-shadow: 0 0 0 rgba(0,35,64,.45);
+    background-image: none;
+    border:0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/********Placeholder defaults********/
+
+::-webkit-input-placeholder {
+  color: rgba(0,35,64,.45);
+}
+::-moz-placeholder {
+  color: rgba(0,35,64,.45);
+}
+:-ms-input-placeholder {
+  color: rgba(0,35,64,.45);
+}
+:-moz-placeholder {
+  color: rgba(0,35,64,.45);
+}
+
+/********Button, select, input defualts********/
+
+button, input[type=submit] {
+  outline: 0;
+  border: 0;
+  border-style: none;
+}
+
+input:required {
+  box-shadow: none;
+}
+
+input:invalid {
+  box-shadow: none;
 }
 /***************FOUNDATION MEDIA QUERIES ***************/
 
@@ -183,18 +268,20 @@ h1, h2 {
   }
 }
 
+
+
 @media screen and (max-width: 400px) {
   header {
     height: 148px;
   }
   nav ul {
-    width: 70.5%;
+    width: 68%;
   }
   .home {
     width: 28%;
   }
   .home a {
-    padding-top: 62px;
+    padding-top: 72px;
   }
   .home a:before {
     left: 30%;
@@ -208,19 +295,14 @@ h1, h2 {
   }
 }
 
-footer {
-  position: absolute; bottom: 0;
-  width: 100%;
-  height: 72px;
-  padding-top: 12px;
+
+.clearfix:after {
+  content: "";
+  display: table;
   clear: both;
-  background: linear-gradient(to right, rgba(0,193,199,.5) 25%, rgba(0,247,242,.3) 50%, rgba(0,193,199,.5));
-  border-radius: 2px 2px 0 0;
-  box-shadow: 0 0 2px rgba(105,62,57,.8);
-  text-align: center;
 }
 
-
-
-
+::-moz-placeholder {
+  opacity: 1;
+}
 
